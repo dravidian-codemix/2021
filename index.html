@@ -1,20 +1,37 @@
 <!doctype html>
 <html lang="en">
   <head>
-  	<title>SADLCM - FIRE 2020</title>
+    <title>SADLCM - FIRE 2020</title>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
-		<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+          .test a {
+          margin-left: 10px; 
+          float: left;
+          text-align: center;
+          overflow: auto; 
+          }
+
+          .test a img {
+          width: 120px;
+          border:2px solid white; 
+          border-radius: 0%; 
+          }
+    </style>
   </head>
   <body>
 
   <div>
 
         <div class="container text-left">
-          <h1>SADLCM - FIRE 2020</h1>
-          <p>Sentiment Analysis for Davidian Languages in Code-Mixed Text</p>
+                  <div class="col-sm-15 nav-test">
+                        <!--img style="float: left; padding-right: 13px;" src="insight-logo.jpeg" width="160" height="60"/-->
+                        <h1>SADLCM - FIRE 2020</h1>
+                        <h5>Sentiment Analysis for Davidian Languages in Code-Mixed Text</h5>
+                  </div>
         </div>
         <br/>
      
@@ -46,7 +63,6 @@
                     </ul>
               </div>
               <div class="col-sm-9">
-
                       <div>
                             <div>
                                   <div class="panel-heading" >
@@ -57,52 +73,59 @@
                                   <div class="panel-body">
                                     <p>
                                         Sentiment analysis is the task of identifying subjective opinions or responses about a given topic. It has been an active area of research in the past two decades in both academia and industry. There is an increasing demand for sentiment analysis on social media texts which are largely code-mixed. Code-mixing is a prevalent phenomenon in a multilingual community and the code-mixed texts are sometimes written in non-native scripts. Systems trained on monolingual data fail on code-mixed data due to the complexity of code-switching at different linguistic levels in the text.  This shared task presents a new gold standard corpus for sentiment analysis of code-mixed text in Dravidian languages (Malayalam-English and Tamil-English). 
-					  </p>	
-				    <p>
-					    Malayalam is one of the Dravidian languages spoken in the southern region of India with official recognition in the Indian state of Kerala and in the Union Territories of Lakshadweep and Puducherry. There are nearly 38 million Malayalam speakers in India and other countries. Malayalam is a deeply agglutinative language. Tamil is a Dravidian language spoken by Tamil people in India, Sri Lanka and by the Tamil diaspora around the world, with official recognition in India, Sri Lanka and Singapore. The Malayalam script is the Vatteluttu alphabet extended with symbols from the Grantha alphabet.  The Tamil script evolved from the Brahmi script, Vatteluttu alphabet, and Chola-Pallava script. It has 12 vowels, 18 consonants, and 1 āytam (voiceless velar fricative). Minority languages such as Saurashtra, Badaga, Irula, and Paniya are also written in the Tamil script. Both Tamil and Malayalam scripts are alpha-syllabic, belonging to a family of abugida writing system that is partially alphabetic and partially syllable-based. However, social media users often adopt Roman script for typing because it is easy to input.  Hence, the majority of the data available in social media for these under-resourced languages are code-mixed.
-					  </p>
-					<p>  
-						The goal of this task is to identify sentiment polarity of the code-mixed dataset of comments / posts in Dravidian Languages (Malayalam-English and Tamil-English) collected from social media. The comment / post may contain more than one sentence but the average sentence length of the corpora is 1. Each comment / post is annotated with sentiment polarity at the comment / post level.  This dataset also has class imbalance problems depicting real world scenarios. Our proposal aims to encourage research that will reveal how sentiment is expressed in code-mixed scenarios on social media.. 
-					  </p>
-					  <p>The participants will be provided development, training and test dataset.</p>
-					  <p>Task A: This is a message-level polarity classification task. Given a Youtube comment, systems have to classify it into positive, negative, neutral, mixed emotions, or not in the intended languages. </p>
-					  <p>As far as we know, this is the first shared task on Sentiment Analysis in Dravidian Code-Mixed text.
-					  
-
+                                    </p>  
+                                    <p>
+                                      Malayalam is one of the Dravidian languages spoken in the southern region of India with official recognition in the Indian state of Kerala and in the Union Territories of Lakshadweep and Puducherry. There are nearly 38 million Malayalam speakers in India and other countries. Malayalam is a deeply agglutinative language. Tamil is a Dravidian language spoken by Tamil people in India, Sri Lanka and by the Tamil diaspora around the world, with official recognition in India, Sri Lanka and Singapore. The Malayalam script is the Vatteluttu alphabet extended with symbols from the Grantha alphabet.  The Tamil script evolved from the Brahmi script, Vatteluttu alphabet, and Chola-Pallava script. It has 12 vowels, 18 consonants, and 1 āytam (voiceless velar fricative). Minority languages such as Saurashtra, Badaga, Irula, and Paniya are also written in the Tamil script. Both Tamil and Malayalam scripts are alpha-syllabic, belonging to a family of abugida writing system that is partially alphabetic and partially syllable-based. However, social media users often adopt Roman script for typing because it is easy to input.  Hence, the majority of the data available in social media for these under-resourced languages are code-mixed.
+                                    </p>
+                                    <p>  
+                                      The goal of this task is to identify sentiment polarity of the code-mixed dataset of comments / posts in Dravidian Languages (Malayalam-English and Tamil-English) collected from social media. The comment / post may contain more than one sentence but the average sentence length of the corpora is 1. Each comment / post is annotated with sentiment polarity at the comment / post level.  This dataset also has class imbalance problems depicting real world scenarios. Our proposal aims to encourage research that will reveal how sentiment is expressed in code-mixed scenarios on social media.. 
+                                      </p>
+                                      <p>The participants will be provided development, training and test dataset.</p>
+                                      <p><b>Task:</b></p>
+                                      <p> This is a message-level polarity classification task. Given a Youtube comment, systems have to classify it into positive, negative, neutral, mixed emotions, or not in the intended languages. </p>
+                                      <p>As far as we know, this is the first shared task on Sentiment Analysis in Dravidian Code-Mixed text.
                                     </p>              
                                   </div>
                             </div>
                       </div>
+                      <br/>
               </div>
-		<div class="lofolist">
-			<div class="imground">
-                        <a href="https://nuig.insight-centre.org/uld/" target="_blank"><img class="img-responsive img-circle" alt="Unit for Linguistic Data" src="https://nuig.insight-centre.org/uld/wp-content/uploads/sites/19/2019/02/uld-logo-300x300.png" data-toggle="tooltip" title="Unit for Linguistic Data" data-placement="bottom"></a>
-			</div>
-                     <div class="imground">
-                        <a href="https://www.insight-centre.org/" target="_blank"><img class="img-responsive img-circle" alt="Insight SFI Research Centre for Data Analytics" src="https://github.com/sadlcm/sadlcm.github.io/blob/master/insight-logo.jpeg" data-toggle="tooltip" title="Insight SFI Research Centre for Data Analytics" data-placement="bottom"></a>
-                     </div>
-                     <div class="imground">
-                        <a href="https://www.sfi.ie/" target="_blank"><img class="img-responsive img-circle" alt="Science Foundation Ireland" src="https://www.insight-centre.org/images/SFI_logo.png" data-toggle="tooltip" title="Insight SFI Research Centre for Data Analytics" data-placement="bottom"></a>
-                     </div>
-                     <div class="imground">
-                        <a href="https://dsi.nuigalway.ie/" target="_blank"><img class="img-responsive" alt="Data Science Institute" src="https://dsi.nuigalway.ie/static/build/img/dsi_sm_logo.ce2e0b4c6d83d7715645b90edd6bfcd7.png" data-toggle="tooltip" title="Data Science Institute" data-placement="bottom"></a>
-                     </div>
-                     <div class="imground">
-                        <a href="https://www.nuigalway.ie/" target="_blank"><img class="img-responsive" alt="NUI Galway" src="https://dsi.nuigalway.ie/static/build/img/nuig_sm_logo.24022ca4da7048d84864dea3cd97f6f3.jpg" data-toggle="tooltip" title="National University of Ireland Galway" data-placement="bottom"></a>
-                     </div>
-                     <div class="imground">
-                        <a href="https://www.iiitmk.ac.in/" target="_blank"><img class="img-responsive" alt="IIITM-K Trivandrum" src="https://www.iiitmk.ac.in/wp-content/uploads/2018/01/IIITMKLOGO-new.png" data-toggle="tooltip" title="IIITM-K" data-placement="bottom"></a>
-                     </div>
-                     <div class="imground">
-                        <a href="https://www.cardiff.ac.uk/" target="_blank"><img class="img-responsive" alt="Cardiff University" src="https://logos-download.com/wp-content/uploads/2016/11/Cardiff_University_logo_logotype-700x673.png" data-toggle="tooltip" title="Cardiff University" data-placement="bottom"></a>
-                     </div>
-                     
-                  </div>
-		
-        </div>
-	  
-
+              
+        </div>  
     </div>
+
+    <footer class="sticky-footer">
+      <div class="row">
+        <div class="container my-auto">
+
+            <div class="test">                            
+                            
+                                <a href="https://nuig.insight-centre.org/uld/" target="_blank"><img class="img-responsive img-circle" alt="Unit for Linguistic Data" src="https://nuig.insight-centre.org/uld/wp-content/uploads/sites/19/2019/02/uld-logo-300x300.png" width="160" height="80" data-toggle="tooltip" title="Unit for Linguistic Data" data-placement="bottom"></a>
+                            
+                            
+                                <a href="https://www.insight-centre.org/" target="_blank"><img class="img-responsive img-circle" alt="Insight SFI Research Centre for Data Analytics" src="insight-logo.jpeg" width="130" height="60" data-toggle="tooltip" title="Insight SFI Research Centre for Data Analytics" data-placement="bottom"></a>
+                            
+                            
+                                <a href="https://www.sfi.ie/" target="_blank"><img class="img-responsive img-circle" alt="Science Foundation Ireland" src="https://www.insight-centre.org/images/SFI_logo.png"  width="180" height="80"data-toggle="tooltip" title="Insight SFI Research Centre for Data Analytics" data-placement="bottom"></a>
+                            
+                            
+                                <a href="https://dsi.nuigalway.ie/" target="_blank"><img class="img-responsive" alt="Data Science Institute" src="https://dsi.nuigalway.ie/static/build/img/dsi_sm_logo.ce2e0b4c6d83d7715645b90edd6bfcd7.png" width="180" height="80"data-toggle="tooltip" title="Data Science Institute" data-placement="bottom"></a>
+                            
+                                <a href="https://www.nuigalway.ie/" target="_blank"><img class="img-responsive" alt="NUI Galway" src="https://dsi.nuigalway.ie/static/build/img/nuig_sm_logo.24022ca4da7048d84864dea3cd97f6f3.jpg" width="180" height="80" data-toggle="tooltip" title="National University of Ireland Galway" data-placement="bottom"></a>
+                            
+                            
+                                <a href="https://www.iiitmk.ac.in/" target="_blank"><img class="img-responsive" alt="IIITM-K Trivandrum" src="https://www.iiitmk.ac.in/wp-content/uploads/2018/01/IIITMKLOGO-new.png" width="100" height="50" data-toggle="tooltip" title="IIITM-K" data-placement="bottom"></a>
+                            
+                            
+                                <a href="https://www.cardiff.ac.uk/" target="_blank"><img class="img-responsive" alt="Cardiff University" src="https://logos-download.com/wp-content/uploads/2016/11/Cardiff_University_logo_logotype-700x673.png" width="100" height="60" data-toggle="tooltip" title="Cardiff University" data-placement="bottom"></a>
+                            
+            </div>
+        </div>
+        <div class="copyright text-center my-auto">
+              <span>Copyright &copy; SADLCM2020</span>
+            </div>
+      </div>
+    </footer>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.js"></script>

@@ -1,158 +1,216 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Dravidian-CodeMix-FIRE 2021</title>
-    <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <style>
-          .test a {
-          margin-left: 10px; 
-          float: left;
-          text-align: center;
-          overflow: auto; 
-          }
 
-          .test a img {
-          width: 120px;
-          border:2px solid white; 
-          border-radius: 0%; 
-          }
-    </style>
-  </head>
-  <body>
+<head>
+  <title>Dravidian-CodeMix-FIRE 2021</title>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+</head>
+
+<body>
 
   <div>
 
-        <div class="container text-left">
-                  <div class="col-sm-15 nav-test">
-                        <img style="float: left; padding-right: 13px;" src="dravidian-code-mixed-logo.png" width="160" height="60"/>
-                        <h1>Dravidian-CodeMix-<a href="http://fire.irsi.res.in/fire/2021/home" target="_blank">FIRE 2021</a></h1>
-                        <h5>Sentiment Analysis for Dravidian Languages in Code-Mixed Text</h5>
-                  </div>
-        </div>
-        <br/>
-     
-
-        <div class="row ">
-              <div class="col-sm-2 nav-test">
-                  <ul class="nav nav-pills nav-stacked ">
-                      <li class="nav-item ">
-                          <a class="nav-link" href="index.html">Overview</a>
-                        </li>
-                        <li class="nav-item ">
-                          <a class="nav-link active" href="call_for_participation.html">Call for Participation<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="registration.html">Registration</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="important_dates.html">Important dates</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="organisers.html">Organisers</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="datasets.html">Datasets</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="proceedings.html">Proceedings</a>
-                        </li>
-                    </ul>
-              </div>
-              <div class="col-sm-9">
-                      <div>
-                            <div>
-                                  <div class="panel-heading" >
-                                          <h3 class="panel-title" style="color:#778899; font-size: 20px;">            
-                                                  <a><b>Overview</b></a>
-                                          </h3>
-                                  </div>
-                                  <div class="panel-body">
-                                    <p>
-                                        Sentiment analysis is the task of identifying subjective opinions or responses about a given topic. It has been an active area of research in the past two decades in both academia and industry. There is an increasing demand for sentiment analysis on social media texts which are largely code-mixed. Code-mixing is a prevalent phenomenon in a multilingual community where the code-mixed texts are sometimes written in non-native scripts. Systems trained on monolingual data fail on code-mixed data due to the complexity of code-switching at different linguistic levels in the text.  This shared task presents a new gold standard corpus for sentiment analysis of code-mixed text in Dravidian languages (Malayalam-English and Tamil-English). 
-                                    </p>  
-                                    <p>
-                                      Tamil language is spoken by Tamil people in India, Sri Lanka and by the Tamil diaspora around the world, with official recognition in India, Sri Lanka and Singapore. Kannada and Malayalam are a Dravidian language spoken predominantly by the people of Karnataka, and Kerala,  India. The Tamil script evolved from the Tamili script, Vatteluttu alphabet, and Chola-Pallava script. It has 12 vowels, 18 consonants, and 1 āytam (voiceless velar fricative). Minority languages such as Saurashtra, Badaga, Irula, and Paniya are also written in the Tamil script. Tamil scripts are explained in Tolkappiyam (dating 5,320 BCE) as Eluttu" means "sound, letter, phoneme", and this covers the sounds of the Tamil language, how they are produced (phonology). It includes punarcci (lit. "joining, copulation") which is combination of sounds, orthography, graphemic and phonetics with sounds as they are produced and listened to. Both Kannada and Malayalam scripts are alpha-syllabic, belonging to a family of abugida writing systems that is partially alphabetic and partially syllable-based. However, social media users often mix Roman script for typing because it is easy to input.  Hence, the majority of the data available in social media for these under-resourced languages are code-mixed.
-                                      </p>
-                                    <p>  
-                                      The goal of this task is to identify sentiment polarity of the code-mixed dataset of comments/posts in Dravidian Languages (Malayalam-English and Tamil-English) collected from social media. The comment/post may contain more than one sentence but the average sentence length of the corpora is 1. Each comment/post is annotated with sentiment polarity at the comment/post level.  This dataset also has class imbalance problems depicting real-world scenarios. Our proposal aims to encourage research that will reveal how sentiment is expressed in code-mixed scenarios on social media.
-                                      </p>
-                                      <p>The participants will be provided development, training and test dataset.</p>
-                                      <p><b>Task:</b></p>
-                                      <p> This is a message-level polarity classification task. Given a Youtube comment, systems have to classify the comment into positive, negative, neutral, mixed emotions or if the comment is not in the intended language. </p>
-                                      <p>Last year link for <a href="https://dravidian-codemix.github.io/2020/"> Sentiment Analysis in Dravidian Code-Mixed text 2020</a>. The sister taks for <a href="https://sites.google.com/view/dravidian-codemix-fire2020/overview"> offensive language detection in Dravidian Code-Mixed text (https://sites.google.com/view/dravidian-codemix-fire2020/overview) </a>. It is co-located with 13th meeting of <a href="http://fire.irsi.res.in/fire/2021/home">Forum for Information Retrieval Evaluation 2021 </a> which will be held virtually in Hyderabad, India.
-                                                                              
-                                        <p><b>Paper submission:</b></p>
-                                        <p> The paper (Sentiment Analysis for Davidian Languages in Code-Mixed Text) name format should be: <b>TEAM_NAME@Dravidian-CodeMix-FIRE2021: Title of the paper.</b> For example: <b>NUIG_ULD@Dravidian-CodeMix-FIRE2021: Sentiment Analysis on Multilingual Code Mixing Text.</b> </p>
-                                    <p>
-                                      Following are some general guidelines to keep in mind while submitting the working notes.
-                                      <ul>
-                                        <li>Basic sanity check for grammatical errors and reported results.</li>
-                                        <li>Papers should have sufficient information for reproducing the mentioned results - Papers should follow the appropriate style (We will use CEUR style: details below)</li>
-                                        <li>Check the papers for text reuse / plagiarism. This includes self-plagiarism as well. We would like to stress this point as CEUR is quite strict about it. Any paper found to have plagiarized content should be rejected without further consideration.</li>
-                                        <li>It has been commonly observed that several teams write more than one working notes (for e.g. separate submissions for separate subtasks) and reuse a substantial portion of the text in these multiple submissions. Keeping this in mind, we will NOT be allowing multiple working notes from the same set of authors. They should be asked to merge them into one.</li>
-                                        <li>Please ensure the author names do not have any salutations like Dr., Prof., etc. in the final version.</li>
-                                        <li>Each paper should have a copyright clause included in the paper (See the"Author agreement variants" at <a href="http://ceur-ws.org/HOWTOSUBMIT.html" target="_blank">http://ceur-ws.org/HOWTOSUBMIT.html)</a></li>
-                                        <li>Each author should also submit a copyright agreement signed by the authors. (Partially filled agreement will be shared shortly).</li>
-                                      </ul>
-                                    </p>
-                                  <p>All submissions should be in Single column CEUR format. Authors should use one of the CEUR Templates below:
-                                    <ul>
-                                        <li>Overleaf: <a href="https://www.overleaf.com/read/gwhxnqcghhdt" target="_blank">https://www.overleaf.com/read/gwhxnqcghhdt</a></li>
-                                        <li>Word and Latex: <a href="http://ceur-ws.org/Vol-XXX/CEURART.zip" target="_blank">http://ceur-ws.org/Vol-XXX/CEURART.zip</a></li>   
-                                    </ul>
-                                  </p>         
-                                  <p>In general, apart from plagiarism related concerns, we would not be rejecting any paper.</p>
-<center>Email: <a href="mailto:dravidiancodemixed@gmail.com">dravidiancodemixed@gmail.com</a> and <a href="mailto:bharathiraja.akr@gmail.com">bharathiraja.akr@gmail.com</a></center>
-                                    </p>              
-                                  </div>
-                            </div>
-                      </div>
-                      <br/>
-              </div>
-              
-        </div>  
-    </div>
-
-    <footer class="sticky-footer">
-      <div class="row">
-        <div class="container my-auto">
-
-            <div class="test">                            
-                            
-                                <a href="http://www.iiitt.ac.in/" target="_blank"><img class="img-responsive" alt="IIIT Tiruchirappalli" src="logo-iiit.png" data-toggle="tooltip" title="IIIT Tiruchirappalli" data-placement="bottom"></a>
-                            
-                            
-                                <a href="https://www.insight-centre.org/" target="_blank"><img class="img-responsive img-circle" alt="Insight SFI Research Centre for Data Analytics" src="insight-logo.jpeg" width="130" height="60" data-toggle="tooltip" title="Insight SFI Research Centre for Data Analytics" data-placement="bottom"></a>
-                            
-                            
-                
-                            
-                            
-                                <a href="https://dsi.nuigalway.ie/" target="_blank"><img class="img-responsive" alt="Data Science Institute" src="https://dsi.nuigalway.ie/static/build/img/dsi_sm_logo.ce2e0b4c6d83d7715645b90edd6bfcd7.png" width="180" height="80"data-toggle="tooltip" title="Data Science Institute" data-placement="bottom"></a>
-                            
-                                <a href="https://www.nuigalway.ie/" target="_blank"><img class="img-responsive" alt="NUI Galway" src="https://dsi.nuigalway.ie/static/build/img/nuig_sm_logo.24022ca4da7048d84864dea3cd97f6f3.jpg" width="180" height="80" data-toggle="tooltip" title="National University of Ireland Galway" data-placement="bottom"></a>
-                            
-                            
-                                <a href="https://www.iiitmk.ac.in/" target="_blank"><img class="img-responsive" alt="IIITM-K Trivandrum" src="iiitmk.jpeg" width="100" height="50" data-toggle="tooltip" title="IIITM-K" data-placement="bottom"></a>
-                            
-                            
-                                <a href="http://www.esn.ac.lk/" target="_blank"><img class="img-responsive" alt="Eastern University, Sri Lanka" src="Eastern%20University.png" width="100" height="60" data-toggle="tooltip" title="Eastern University, Sri Lanka" data-placement="bottom"></a>
-                            
-            </div>
-        </div>
-        <div class="copyright text-center my-auto">
-              <span>Copyright &copy; Dravidian-CodeMix-2020</span>
-            </div>
+    <div class="container text-left">
+      <div class="col-sm-15 nav-test">
+        <img style="float: left; padding-right: 13px;" src="dravidian-code-mixed-logo.png" width="160" height="60" />
+        <h1>Dravidian-CodeMix - <a href="http://fire.irsi.res.in/fire/2021/home" target="_blank">FIRE 2021</a></h1>
+        <h5>Sentiment Analysis for Dravidian Languages in Code-Mixed Text</h5>
       </div>
-    </footer>
+    </div>
+    <br />
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+
+    <div class="row ">
+      <div class="col-sm-2 nav-test">
+        <ul class="nav nav-pills nav-stacked ">
+          <li class="nav-item ">
+            <a class="nav-link" href="index.html">Overview</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link active" href="call_for_participation.html">Call for Participation<span
+                class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="registration.html">Registration</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="important_dates.html">Important dates</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="organisers.html">Organisers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="datasets.html">Datasets</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="proceedings.html">Proceedings</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-9">
+        <div>
+          <div>
+            <div class="panel-heading">
+              <h3 class="panel-title" style="color:#778899; font-size: 20px;">
+                <a><b>Overview</b></a>
+              </h3>
+            </div>
+            <div class="panel-body">
+              <p>
+                Sentiment analysis is the task of identifying subjective opinions or responses about a given topic. It
+                has been an active area of research in the past two decades in both academia and industry. There is an
+                increasing demand for sentiment analysis on social media texts which are largely code-mixed. Code-mixing
+                is a prevalent phenomenon in a multilingual community where the code-mixed texts are sometimes written
+                in non-native scripts. Systems trained on monolingual data fail on code-mixed data due to the complexity
+                of code-switching at different linguistic levels in the text. This shared task presents a new gold
+                standard corpus for sentiment analysis of code-mixed text in Dravidian languages (Malayalam-English and
+                Tamil-English).
+              </p>
+              <p>
+                Tamil language is spoken by Tamil people in India, Sri Lanka and by the Tamil diaspora around the world,
+                with official recognition in India, Sri Lanka and Singapore. Kannada and Malayalam are a Dravidian
+                language spoken predominantly by the people of Karnataka, and Kerala, India. The Tamil script evolved
+                from the Tamili script, Vatteluttu alphabet, and Chola-Pallava script. It has 12 vowels, 18 consonants,
+                and 1 āytam (voiceless velar fricative). Minority languages such as Saurashtra, Badaga, Irula, and
+                Paniya are also written in the Tamil script. Tamil scripts are explained in Tolkappiyam (dating 5,320
+                BCE) as Eluttu" means "sound, letter, phoneme", and this covers the sounds of the Tamil language, how
+                they are produced (phonology). It includes punarcci (lit. "joining, copulation") which is combination of
+                sounds, orthography, graphemic and phonetics with sounds as they are produced and listened to. Both
+                Kannada and Malayalam scripts are alpha-syllabic, belonging to a family of abugida writing systems that
+                is partially alphabetic and partially syllable-based. However, social media users often mix Roman script
+                for typing because it is easy to input. Hence, the majority of the data available in social media for
+                these under-resourced languages are code-mixed.
+              </p>
+              <p>
+                The goal of this task is to identify sentiment polarity of the code-mixed dataset of comments/posts in
+                Dravidian Languages (Malayalam-English and Tamil-English) collected from social media. The comment/post
+                may contain more than one sentence but the average sentence length of the corpora is 1. Each
+                comment/post is annotated with sentiment polarity at the comment/post level. This dataset also has class
+                imbalance problems depicting real-world scenarios. Our proposal aims to encourage research that will
+                reveal how sentiment is expressed in code-mixed scenarios on social media.
+              </p>
+              <p>The participants will be provided development, training and test dataset.</p>
+              <p><b>Task:</b></p>
+              <p> This is a message-level polarity classification task. Given a Youtube comment, systems have to
+                classify the comment into positive, negative, neutral, mixed emotions or if the comment is not in the
+                intended language. </p>
+              <p>Last year link for <a href="https://dravidian-codemix.github.io/2020/"> Sentiment Analysis in Dravidian
+                  Code-Mixed text 2020</a>. The sister taks for <a
+                  href="https://sites.google.com/view/dravidian-codemix-fire2020/overview"> offensive language detection
+                  in Dravidian Code-Mixed text (https://sites.google.com/view/dravidian-codemix-fire2020/overview) </a>.
+                It is co-located with 13th meeting of <a href="http://fire.irsi.res.in/fire/2021/home">Forum for
+                  Information Retrieval Evaluation 2021 </a> which will be held virtually in Hyderabad, India.
+
+              <p><b>Paper submission:</b></p>
+              <p> The paper (Sentiment Analysis for Davidian Languages in Code-Mixed Text) name format should be:
+                <b>TEAM_NAME@Dravidian-CodeMix-FIRE2021: Title of the paper.</b> For example:
+                <b>NUIG_ULD@Dravidian-CodeMix-FIRE2021: Sentiment Analysis on Multilingual Code Mixing Text.</b> </p>
+              <p>
+                Following are some general guidelines to keep in mind while submitting the working notes.
+              <ul>
+                <li>Basic sanity check for grammatical errors and reported results.</li>
+                <li>Papers should have sufficient information for reproducing the mentioned results - Papers should
+                  follow the appropriate style (We will use CEUR style: details below)</li>
+                <li>Check the papers for text reuse / plagiarism. This includes self-plagiarism as well. We would like
+                  to stress this point as CEUR is quite strict about it. Any paper found to have plagiarized content
+                  should be rejected without further consideration.</li>
+                <li>It has been commonly observed that several teams write more than one working notes (for e.g.
+                  separate submissions for separate subtasks) and reuse a substantial portion of the text in these
+                  multiple submissions. Keeping this in mind, we will NOT be allowing multiple working notes from the
+                  same set of authors. They should be asked to merge them into one.</li>
+                <li>Please ensure the author names do not have any salutations like Dr., Prof., etc. in the final
+                  version.</li>
+                <li>Each paper should have a copyright clause included in the paper (See the"Author agreement variants"
+                  at <a href="http://ceur-ws.org/HOWTOSUBMIT.html"
+                    target="_blank">http://ceur-ws.org/HOWTOSUBMIT.html)</a></li>
+                <li>Each author should also submit a copyright agreement signed by the authors. (Partially filled
+                  agreement will be shared shortly).</li>
+              </ul>
+              </p>
+              <p>All submissions should be in Single column CEUR format. Authors should use one of the CEUR Templates
+                below:
+              <ul>
+                <li>Overleaf: <a href="https://www.overleaf.com/read/gwhxnqcghhdt"
+                    target="_blank">https://www.overleaf.com/read/gwhxnqcghhdt</a></li>
+                <li>Word and Latex: <a href="http://ceur-ws.org/Vol-XXX/CEURART.zip"
+                    target="_blank">http://ceur-ws.org/Vol-XXX/CEURART.zip</a></li>
+              </ul>
+              </p>
+              <p>In general, apart from plagiarism related concerns, we would not be rejecting any paper.</p>
+              <center>Email: <a href="mailto:dravidiancodemixed@gmail.com">dravidiancodemixed@gmail.com</a> and <a
+                  href="mailto:bharathiraja.akr@gmail.com">bharathiraja.akr@gmail.com</a></center>
+              </p>
+            </div>
+          </div>
+        </div>
+        <br />
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="sticky-footer">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-sm-9 col-xs-9 col-12 test">
+
+          <a href="http://www.iiitt.ac.in/" target="_blank"><img class="img-responsive" alt="IIIT Tiruchirappalli"
+              src="logo-iiit.png" data-toggle="tooltip" title="IIIT Tiruchirappalli" data-placement="bottom"></a>
+
+        </div>
+        <div class="col-sm-3 col-xs-3 col-12 test">
+          <a href="https://www.iiitmk.ac.in/" target="_blank"><img class="img-responsive" alt="IIITM-K Trivandrum"
+              src="iiitmk.jpeg" data-toggle="tooltip" title="IIITM-K"
+              data-placement="bottom"></a>
+
+        </div>
+        
+      </div>
+      <div class="row" style="margin-top: 20px; margin-bottom: 20px;">
+        <div class="col-sm-3 col-xs-6 col-12 test">
+          <a href="https://www.insight-centre.org/" target="_blank"><img class="img-responsive"
+              alt="Insight SFI Research Centre for Data Analytics" src="insight-logo.jpeg"
+              data-toggle="tooltip" title="Insight SFI Research Centre for Data Analytics" data-placement="bottom"></a>
+
+        </div>
+        <div class="col-sm-3 col-xs-6 col-12 test">
+          <a href="https://dsi.nuigalway.ie/" target="_blank"><img class="img-responsive" alt="Data Science Institute"
+              src="dsi_sm_logo.png"
+              data-toggle="tooltip" title="Data Science Institute" data-placement="bottom"></a>
+        </div>
+        <div class="col-sm-3 col-xs-6 col-12 test">
+          <a href="https://www.nuigalway.ie/" target="_blank"><img class="img-responsive" alt="NUI Galway"
+              src="nuig_sm_logo.jpg"
+              data-toggle="tooltip" title="National University of Ireland Galway"
+              data-placement="bottom"></a>
+
+        </div>
+        
+        
+        <div class="col-sm-3 col-xs-6 col-12 test">
+          <a href="http://www.esn.ac.lk/" target="_blank"><img class="img-responsive"
+              alt="Eastern University, Sri Lanka" src="Eastern%20University.png"
+              data-toggle="tooltip" title="Eastern University, Sri Lanka" data-placement="bottom"></a>
+
+        </div>
+      </div>
+      <hr>
+      <div class="copyright text-center my-auto" style="margin-bottom: 20px;">
+        <span>Copyright &copy; Dravidian-CodeMix-2020</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
 </html>

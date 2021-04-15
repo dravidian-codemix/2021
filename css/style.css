@@ -1,0 +1,11 @@
+.test {
+    display: flex; 
+    justify-content:center;
+  }
+
+  .test a img {
+    height: 100%;
+    width: auto;
+    border: 2px solid white;
+    border-radius: 0%;
+  }
